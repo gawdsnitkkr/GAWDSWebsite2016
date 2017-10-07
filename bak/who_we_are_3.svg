@@ -1,0 +1,38 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="854" height="480" viewBox="0 0 854 480" version="1.1" id="svg2" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+  <metadata id="metadata22"/>
+  <defs id="defs4">
+    <style type="text/css" id="style6">
+      
+            .str0 {
+                stroke: #00A9AE;
+                stroke-width: 17.0814
+            }
+            
+            .fil1 {
+                fill: none
+            }
+            
+            .fil0 {
+                fill: #1F1A17
+            }
+            
+            .fil2 {
+                fill: #00A9AE
+            }
+
+        
+    </style>
+  </defs>
+  <g transform="matrix(0.37297657,0,0,0.37297657,-2.0358708,-508.62667)" id="g8">
+    <g id="g10">
+      <g id="g3350" transform="matrix(0.90277777,0,0,0.90277777,-0.31566908,267.93092)">
+        <g id="Block" opacity="0">
+          <polygon id="polygon12" class="fil1" points="390.947 1610.71 1758.44 1610.71 1920.31 1811.64 1769.6 2029.33 390.947 2029.33 0.827982 2250.91 0.827982 1676.53 " fill="none"/>
+          <polygon id="polygon14" class="fil2" points="362.646 1690.76 362.99 1966.05 45.7133 2146.67 45.7133 1741.38 " transform="translate(17.819226,-17.819226)" fill="#00a9ae"/>
+        </g>
+        <path id="path16" d="m0.827982 1676.53 390.119018-65.82 1367.493 0 161.87 200.93" style="fill:none;stroke-width:17.08139992;stroke:#00a9ae"/>
+        <path id="path18" d="m0.827982 2230.4493 390.119018-211.79 1374.213-8.55 155.15-209.14" style="fill:none;stroke-width:17.08139992;stroke:#00a9ae"/>
+      </g>
+    </g>
+  </g>
+</svg>

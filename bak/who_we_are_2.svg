@@ -1,0 +1,36 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="854" height="480" viewBox="0 0 854 480" version="1.1" id="svg2" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+  <metadata id="metadata4"/>
+  <defs id="defs6">
+    <style type="text/css" id="style8">
+      
+            .str0 {
+                stroke: #00A9AE;
+                stroke-width: 17.0814
+            }
+            
+            .fil1 {
+                fill: none
+            }
+            
+            .fil0 {
+                fill: #1F1A17
+            }
+            
+            .fil2 {
+                fill: #00A9AE
+            }
+
+        
+    </style>
+  </defs>
+  <g transform="matrix(0.33438175,0,0,0.3296334,25.569712,-198.98652)" id="g10">
+    <g transform="matrix(0.95,0,0,0.95,-75.487153,66.588474)" id="g12">
+      <g id="Block" opacity="0">
+        <polygon points="2059.85 1549.21 390.947 1549.21 0.827982 1615.04 0.827982 1048.41 390.947 1136.17 2076.59 1136.17 2227.29 1331.53 " class="fil1" id="polygon14" fill="none"/>
+        <polygon points="45.7133 1533.53 45.7133 1128.24 362.646 1196.26 363.143 1475.95 " class="fil2" id="polygon16" transform="translate(12.591974,0)" fill="#00a9ae"/>
+      </g>
+      <path d="m0.827982 1048.41 390.119018 87.76 1685.643 0 150.7 195.36" id="path18" style="fill:none;stroke-width:17.08139992;stroke:#00a9ae"/>
+      <path d="m0.827982 1604.5031 390.119018-65.83 1668.903 0 167.44-217.68" id="path20" style="fill:none;stroke-width:17.08139992;stroke:#00a9ae"/>
+    </g>
+  </g>
+</svg>

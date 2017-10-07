@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GAWDS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="application-name" content="GAWDS">
+    <meta name="author" content="Divya Mamgai">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery_mousewheel.js"></script>
+    <script type="text/javascript" src="js/elastic.js"></script>
+    <script type="text/javascript" src="js/jquery_drawsvg.js"></script>
+    <script type="text/javascript" src="js/TweenMax.js"></script>
+    <script type="text/javascript" src="js/ScrollPlugin.min.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
+</head>
+
+<body>
+<object data="images/arrow.svg" type="image/svg+xml" class="Helper" id="NavigationHelper"></object>
+<object data="images/arrow.svg" type="image/svg+xml" class="Helper" id="ScrollDownHelper"></object>
+<object data="images/facebook.svg" type="image/svg+xml" class="Link" id="FacebookLink"></object>
+<object data="images/linkedin.svg" type="image/svg+xml" class="Link" id="LinkedInLink"></object>
+<div id="MainFrame">
+    <section>
+        <div id="StartPage">
+            <object data="images/startpage.svg" type="image/svg+xml" id="StartPageSVG" width="100%"
+                    height="100%"></object>
+        </div>
+    </section>
+    <section>
+        <div id="WhoWeAre">
+            <div class="Heading">
+                <object data="images/who_we_are.svg" type="image/svg+xml" id="WhoWeAreHeading"></object>
+            </div>
+            <object data="images/who_we_are_content.svg" type="image/svg+xml" id="WhoWeAreContentSVG"
+                    class="WhoWeAreEntry"
+                    width="854" height="480"></object>
+            <object data="images/who_we_are_icons.svg" type="image/svg+xml" id="WhoWeAreIconsSVG" class="WhoWeAreEntry"
+                    width="854" height="480"></object>
+        </div>
+    </section>
+    <section>
+        <div class="Heading">
+            <object data="images/what_we_do.svg" type="image/svg+xml" id="WhatWeDoHeading"></object>
+        </div>
+        <iframe src="what_we_do.html" width="100%" height="100%" style="border:none"></iframe>
+    </section>
+    <section>
+        <div class="Heading">
+            <object data="images/meet_the_gawds.svg" type="image/svg+xml" id="MeetTheGawdsHeading"></object>
+        </div>
+        <div id="MemberContainer">
+            <div class="Member" data-image="aman.jpg">
+                <div class="Name">Aman</div>
+            </div>
+            <div class="Member" data-image="ankit.jpg">
+                <div class="Name">Ankit</div>
+            </div>
+            <div class="Member" data-image="anshu.jpg">
+                <div class="Name">Anshu</div>
+            </div>
+            <div class="Member" data-image="anshul.jpg">
+                <div class="Name">Anshul</div>
+            </div>
+            <div class="Member" data-image="chetali.jpg">
+                <div class="Name">Chetali</div>
+            </div>
+            <div class="Member" data-image="divya.jpg">
+                <div class="Name">Divya</div>
+            </div>
+            <div class="Member" data-image="gautam.jpg">
+                <div class="Name">Gautam</div>
+            </div>
+            <div class="Member" data-image="rewanth.jpg">
+                <div class="Name">Rewanth</div>
+            </div>
+            <div class="Member" data-image="shivam.jpg">
+                <div class="Name">Shivam</div>
+            </div>
+            <div class="Member" data-image="upasana.jpg">
+                <div class="Name">Upasana</div>
+            </div>
+            <div class="Member" data-image="arpit.jpg">
+                <div class="Name">Arpit</div>
+            </div>
+            <div class="Member" data-image="karan.jpg">
+                <div class="Name">Karan</div>
+            </div>
+            <div class="Member" data-image="narendra.jpg">
+                <div class="Name">Narendra</div>
+            </div>
+            <div class="Member" data-image="anuj.jpg">
+                <div class="Name">Anuj</div>
+            </div>
+            <div class="Member" data-image="avinash.jpg">
+                <div class="Name">Avinash</div>
+            </div>
+            <div class="Member" data-image="gaurav.jpg">
+                <div class="Name">Gaurav</div>
+            </div>
+            <div class="Member" data-image="shivam2.jpg">
+                <div class="Name">Shivam</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="EnvelopeWrapper">
+            <div class="Heading">
+                <object data="images/contact_us.svg" type="image/svg+xml" id="EnvelopeHeadingSVG"></object>
+            </div>
+            <div id="Envelope">
+                <div id="Loading" class="Message">Posting...</div>
+                <div id="Done" class="Message">Your message has been posted successfully!</div>
+                <div id="Fail" class="Message">Failed!</div>
+                <object data="images/envelope_back.svg" type="image/svg+xml" id="EnvelopeBackSVG"></object>
+                <div id="Form">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div id="NameTag" class="Tag">Full Name</div>
+                                <input title="Name" id="Name" maxlength="64">
+                            </td>
+                            <td>
+                                <div id="EmailTag" class="Tag">Email ID</div>
+                                <input title="Email" id="Email" maxlength="64">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div id="MessageTag" class="Tag">Message <span id="MessageCount"></span></div>
+                                <textarea title="Message" id="Message" maxlength="330" rows="0"></textarea>
+
+                                <div id="ErrorMessage"></div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <object data="images/envelope_front.svg" type="image/svg+xml" id="EnvelopeFrontSVG"></object>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/what_we_do.min.js" />
+        <item url="file://$PROJECT_DIR$/js/ScrollPlugin.min.js" />
+        <item url="file://$PROJECT_DIR$/js/main.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/what_we_do.min.js" />
+      <root url="file://$PROJECT_DIR$/js/ScrollPlugin.min.js" />
+      <root url="file://$PROJECT_DIR$/js/main.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

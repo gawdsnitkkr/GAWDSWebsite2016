@@ -1,0 +1,428 @@
+ul.solarsystem {
+    position: relative;
+    height: 640px;
+    list-style: none;
+    -webkit-transition: all 0.09s ease-in;
+    -moz-transition: all 0.09s ease-in;
+    -o-transition: all 0.09s ease-in;
+    transition: all 0.09s ease-in;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.solarsystem li {
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    border: 2px solid white;
+}
+
+ul.solarsystem li span {
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin: 30px;
+}
+
+ul.solarsystem li.sun {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fc3;
+    top: 60px;
+    left: 90px;
+    border: none;
+    z-index: 100;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+ul.solarsystem li.sun span {
+    height: 100px;
+    width: 100px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: white;
+}
+
+#path {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    -webkit-border-radius: 112px;
+    -moz-border-radius: 112px;
+    top: 7.8%;
+    left: 34.7%;
+    z-index: 97;
+    border: 2px solid white;
+    position: absolute;
+    opacity: 0;
+}
+
+ul.solarsystem li.earth {
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    top: 6.7%;
+    left: 34.65%;
+    z-index: 97;
+    opacity: 0;
+    display: none;
+    position: absolute;
+}
+
+ul.solarsystem li.earth span {
+    background: #06c;
+    top: 56px;
+    left: 206px;
+    background-color: white;
+    background-size: cover;
+    display: none;
+}
+
+ul.solarsystem li.earth span.moon {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #ccc;
+    top: 12px;
+    left: 12px;
+    background-color: white;
+}
+
+ul.solarsystem li {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+}
+
+ul.solarsystem li.earth span {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: moon;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: moon;
+}
+
+ul.solarsystem li.earth {
+    -webkit-animation-duration: 12s;
+    -moz-animation-duration: 12s;
+}
+
+ul.solarsystem li.earth span {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes moon {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes moon {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: "sans-serif";
+    background-color: none;
+    color: white;
+    overflow: hidden;
+}
+
+#home {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#home2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    color: white;
+    z-index: 2;
+}
+
+#animated_portion_outer {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 5%;
+    left: 15%;
+    background-color: none;
+}
+
+#solars {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 5%;
+    left: 15%;
+}
+
+#animated_portion {
+    position: absolute;
+    width: 43%;
+    height: 55%;
+    top: 10%;
+    left: 28%;
+    background-color: none;
+    color: white;
+}
+
+#animated_portion_inside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+#text_description {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 60%;
+    left: 0%;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
+
+.dot {
+    position: absolute;
+    left: 48%;
+    top: 49%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+#play-btn {
+    width: 0;
+    height: 0;
+    top: 29.5%;
+    left: 49%;
+    border-style: solid;
+    border-width: 15px 0 15px 30px;
+    border-color: transparent transparent transparent #424242;
+    position: absolute;
+    opacity: 0;
+}
+
+#play-btn2 {
+    width: 0;
+    height: 0;
+    top: 33%;
+    left: 38.5%;
+    border-style: solid;
+    border-width: 15px 0 15px 30px;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+}
+
+#base {
+    position: absolute;
+    opacity: 0;
+    top: 298px;
+    left: 39.7%;
+    width: 230px;
+    height: 0px;
+    border-radius: 0%;
+    z-index: 9999;
+    border-width: 5px;
+    border: 5px solid white;
+}
+
+.jak {
+    position: absolute;
+    left: 2px;
+    width: 2px;
+    top: -2px;
+    height: 2px;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 999;
+    opacity: 0;
+}
+
+#rec {
+    position: absolute;
+    left: 40px;
+    width: 40px;
+    background-color: black;
+    height: 2px;
+    z-index: 9999;
+    opacity: 0;
+}
+
+#img {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    background-image: url("../images/glow.png");
+    transform: rotate(-20deg);
+    left: 38.1%;
+    top: 5.2px;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    opacity: 0;
+    display: none;
+}
+
+.flying_text {
+    z-index: 9999;
+    position: absolute;
+    top: 44%;
+    left: 46%;
+    opacity: 0;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+    color: white;
+}
+
+.descText {
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    font-family: arial;
+    display: none;
+}
+
+#descriptionText {
+    position: relative;
+    top: 590px;
+    width: 100%;
+    text-align: center;
+    color: #00A99D;
+}
+
+#descriptionText div {
+    width: 100%;
+    text-align: center;
+}
+
+.inclined {
+    position: absolute;
+    width: 3px;
+    height: 200px;
+    background-color: white;
+    z-index: 9999;
+}
+
+.popCircle {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    left: 570px;
+    top: 250px;
+    z-index: 1;
+    display: none;
+}
+
+#largestCircle {
+    height: 20px;
+    width: 20px;
+    background-color: #00A99D;
+    position: absolute;
+    left: 634px;
+    top: 300px;
+    z-index: 1;
+    border-radius: 50%;
+    display: none;
+}
+
+#home2 ul {
+    position: absolute;
+    left: 41%;
+    top: 30%;
+}
+
+#circleOfButton {
+    height: 80px;
+    width: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    left: 47%;
+    top: 40%;
+}
+
+#circleOfButton:hover {
+    cursor: pointer;
+}
+
+#circle1 {
+    background-image: url("../images/ai.svg");
+}
+
+#circle2 {
+    background-image: url("../images/ps.svg");
+}
+
+#circle3 {
+    background-image: url("../images/cdr.svg");
+}

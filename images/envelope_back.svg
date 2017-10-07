@@ -1,0 +1,22 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" id="EnvelopeBack" viewBox="0 0 800 500" height="500" width="800">
+    <defs id="Definitions">
+        <filter id="Color">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0
+                                                                    1 0 0 0 0
+                                                                    0 1 0 0 0
+                                                                    0 0 0 1 0" id="feColorMatrix" />
+        </filter>
+    </defs>
+    <polygon id="Shadow" points="540 111 600 140 800 240 800 620 540 620" fill="#111" />
+    <g id="BackLayer" transform="translate(0,-537.36222)">
+        <path d="m0.04683115 752.3471 599.99998885 0 0 300-599.99998886 0z" id="Back" filter="url(#Color)" fill="#999" />
+    </g>
+    <g id="CoverLayer" transform="translate(0,-537)">
+        <path d="m300.04683 537.88263 150 107.5 150 107.5-300.00002-0.00001-299.99998885 0L150.04682 645.38263Z" id="Cover" filter="url(#Color)" style="fill:#999;perspective:200" />
+    </g>
+    <g id="PageLayer">
+        <g id="g20">
+            <rect id="Page" width="480.00006" height="488.83929" x="60.046795" y="111.44402" fill="#f2f2f2" />
+        </g>
+    </g>
+</svg>
