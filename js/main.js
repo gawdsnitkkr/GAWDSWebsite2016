@@ -1750,7 +1750,7 @@
             }
         }).Position(Width, Height, HalfWidth, HalfHeight);
         MemberObjects = $('.Member').each(function () {
-            $(this).css('background-image', 'url("images/' + $(this).data('image') + '")');
+            $(this).css('background-image', 'url("' + $(this).data('image') + '")');
         });
         TweenMax.set(MemberObjects, {
             scale: 0.5,
