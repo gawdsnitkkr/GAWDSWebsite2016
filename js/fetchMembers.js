@@ -35,5 +35,4 @@ function populateContent(jsonObj) {
   });
   for(const member of members)
     $("#MemberContainer").append(member.data);
-  console.log(members);
 }
