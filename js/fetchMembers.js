@@ -1,33 +1,34 @@
-const requestURL =
-//   "https://spreadsheets.google.com/feeds/cells/1DmQG7l-C4mlp3puiogcGWHiqV4Ru9rNtCLZOqJ2fr9Q/1/public/values?alt=json";
-      "https://sheets.googleapis.com/v4/spreadsheets/1DmQG7l-C4mlp3puiogcGWHiqV4Ru9rNtCLZOqJ2fr9Q/values/A1:F500?key=AIzaSyDFy_HlmKj__Rogf1NPnN1mALpr2CAYpWM";
+const requestURL = "https://sheets.googleapis.com/v4/spreadsheets/1DmQG7l-C4mlp3puiogcGWHiqV4Ru9rNtCLZOqJ2fr9Q/values/A1:F500?key=AIzaSyCOg87OtIF8dkk94skoQNG0_jRZlV6WCpY";
 
 const request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
 request.send();
 request.onload = function () {
-  const jsonObj = request.response;
-  populateContent(jsonObj);
+  const gawdArray = request.response.values;
+  populateContent(gawdArray);
 };
 
-function populateContent(jsonObj) {
-  const noOfFields = 6;
-  let noOfAlumni = jsonObj["feed"]["entry"].length / noOfFields - 1;
+function populateContent(gawdArray) {
+  let noOfAlumni = gawdArray.length;
   const date = new Date();
   let members = [];
-  for (let i = 1; i <= noOfAlumni; i++) {
-    const batch = jsonObj["feed"]["entry"][i * noOfFields + 5]["content"]["$t"].split("-")[1];
-    if(batch > date.getFullYear() || (+batch === date.getFullYear() && date.getMonth() < 5)) {
-      const memberNameContainer = '<div class="Name">' + jsonObj["feed"]["entry"][i * noOfFields + 1]["content"]["$t"] + "</div>";
-      const linkedInUrl = jsonObj["feed"]["entry"][i * noOfFields + 4]["content"]["$t"];
-      const imageUrl = jsonObj["feed"]["entry"][i * noOfFields + 2]["content"]["$t"];
-      const memberContainer =
-        '<div class="Member" data-image="aman.jpg" style="background-image: url(' + imageUrl +'); opacity: 1; cursor: pointer;" onclick="window.open(\''+linkedInUrl+'\');">' +
-        memberNameContainer +
-        "</div>";
-      const name = jsonObj["feed"]["entry"][i * noOfFields + 1]["content"]["$t"].split(" ")[0];
-      members.push({"batch": batch, "data": memberContainer, "name": name});
+  for (let i = 0; i < noOfAlumni; i++) {
+    try {
+      const batch = gawdArray[i][5].split("-")[1];
+      if(batch > date.getFullYear() || (+batch === date.getFullYear() && date.getMonth() < 5)) {
+        const memberNameContainer = '<div class="Name">' + gawdArray[i][1] + "</div>";
+        const linkedInUrl = gawdArray[i][4];
+        const imageUrl = gawdArray[i][2];
+        const memberContainer =
+          '<div class="Member" data-image="aman.jpg" style="background-image: url(' + imageUrl +'); opacity: 1; cursor: pointer;" onclick="window.open(\''+linkedInUrl+'\');">' +
+          memberNameContainer +
+          "</div>";
+        const name = gawdArray[i][1].split(" ")[0];
+        members.push({"batch": batch, "data": memberContainer, "name": name});
+      }
+    } catch (err) {
+      console.log(err + "\n" + gawdArray[i]);
     }
   }
   // sorting on the basis of batch and name
